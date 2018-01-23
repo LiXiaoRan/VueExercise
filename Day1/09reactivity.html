@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09reactivity</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{a.school}}
+</div>
+
+<script>
+    //vue会循环data中的数据，依次的增加get和set
+    let vm = new Vue({
+        el: '#app',//告诉vue可以管理那个部分
+        data: {   //data中的数据会被vm所代理
+            msg: 'hello',//通过vm.msg取到对应的内容
+            p: '<h1>html部分</h1>',
+            a:{school:''}  //使用变量时，先要初始化，否则新加的属性不会导致页面刷新
+        }
+    });
+    //此方法可以给对象添加响应式的数据变化
+    vm.$set(vm.a,'goto','bybike');
+    //替换原对象
+    vm.a={school:'swust',age:8,addresss:'xxxxxx'};
+</script>
+</body>
+</html>

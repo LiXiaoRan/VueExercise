@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>指令</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
-<!--v-text相当于{{}},可以用来防止大括号刷新时出现在页面上，此时的div中不能写文字-->
-<div id="app" v-text="msg"></div>
+<div id="app">
+    {{msg}}
+    <input type="text" v-model="msg">
+    <!--v-text相当于{{}},可以用来防止大括号刷新时出现在页面上，此时的div中不能写文字-->
+    <div v-text="msg"></div>
+    <!--v-once 只绑定一次 当数据再次发生变化 也不会导致页面刷新-->
+    <div v-once>
+        {{msg}}        {{msg}}
+    </div>
+    <div v-html="p"></div>
 
-<input type="text" v-model="msg">
-<script src="../node_modules/vue/dist/vue.js"></script>
+</div>
+
 <script>
+    /**
+     * vm = viewModel
+     */
     let vm = new Vue({
-        el: '#app',
-        data: {
-            msg: '数据'
+        el: '#app',//告诉vue可以管理那个部分
+        data: {   //data中的数据会被vm所代理
+            msg: 'hello',//通过vm.msg取到对应的内容
+            p:'<h1>html部分</h1>'
         }
-    })
+    });
 </script>
 </body>
 </html>
