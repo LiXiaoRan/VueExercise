@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<!--v-on == @ 。 fn传参的时候加括号，不传参就不要加，会自动传入事件源，要有括号的话，必须手动传入  $event-->
+    <!--<div v-on:mousedown="fn">点击</div>-->
+    <!--<div @mousedown="fn">点击</div>-->
+    <div v-on:mousedown="fn($event,1)">点击</div>
+
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {},
+        methods: {
+            fn(event,a) {//es6的函数写法
+                console.log(event);
+                console.log(a);
+            }
+        }
+    });
+</script>
+</body>
+</html>

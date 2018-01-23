@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="val" @keyup.enter="add($event)">
+    <ul>
+        <li v-for="(va,index) in arr">{{va}}
+            <button @click="remove(index)">删除</button>
+        </li>
+    </ul>
+
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            val: '',
+            arr: []
+        },
+        methods: {
+            add(e) {
+//                if (e.keyCode === 13) {//13是回车键  或者在调用的使用使用@keyup.enter.@keyup.a 监听键盘a键
+//                @keyup.ctrl.enter 同时按ctrl和enter
+                    this.arr.unshift(this.val);
+                    this.val = '';
+//                }
+            },
+            remove(inde) {
+                this.arr = this.arr.filter((item ,index)=> index !== inde);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
