@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <!--moustache小胡子语法  表达式  可以放赋值，取值，三元运算符-->
+    {{msg}}
+</div>
+<script>
+    //引入vue后会给一个vue的构造函数
+    /**
+     * vm = viewModel
+     */
+    let vm = new Vue({
+        el: '#app',//告诉vue可以管理那个部分
+        data: {   //data中的数据会被vm所代理
+            msg: 'hello'//通过vm.msg取到对应的内容
+        }
+    })
+
+
+</script>
+</body>
+</html>

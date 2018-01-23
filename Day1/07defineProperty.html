@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <!--表单元素 input checkbox textarea radio select-->
+    <!--vue的“指令” directive 只是dom上的行间属性  所有指令都已v-开头。value 属性默认会被vue忽略掉 selected checked
+    都没有意义
+   -->
+    <!--v-model会将msg的值赋予输入框，输入框的值改变了也会映射到msg-->
+    <input type="text" id="input" v-model="obj.name">
+</div>
+<script>
+    //以下的代码都是前面mvvm双向绑定的原理
+
+    let obj = {};
+    let temp = {};
+    Object.defineProperty(obj, 'name', {
+        /*    configurable:true,//可配置就是可删除这个属性
+              writeable:false,//是否可更改
+              enumerable:false,//不可枚举，就是不能用for in 去遍历*/
+        get() {  //取obj的name属性会出发
+            return temp["name"];
+        },
+        set(value) {
+            temp["name"] = value;
+            input.value = value;
+        }
+    });
+    //可以直接通过id去调用控件
+    input.value = obj.name;//页面加载时ovj会调用get方法
+    input.addEventListener('input',function () {//等待输入框变化
+        obj.name=this.value;//当值变化时会调用set方法
+    })
+</script>
+</body>
+</html>

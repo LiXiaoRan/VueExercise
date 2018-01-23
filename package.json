@@ -1,0 +1,14 @@
+{
+  "name": "veu_learn",
+  "version": "1.0.0",
+  "description": "\"学习vue\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}

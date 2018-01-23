@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>指令</title>
+</head>
+<body>
+<!--v-text相当于{{}},可以用来防止大括号刷新时出现在页面上，此时的div中不能写文字-->
+<div id="app" v-text="msg"></div>
+
+<input type="text" v-model="msg">
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            msg: '数据'
+        }
+    })
+</script>
+</body>
+</html>
