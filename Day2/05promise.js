@@ -8,7 +8,7 @@
 
 
 
-let  p=new promise(function (resolve,reject) {
+let p = new promise(function (resolve, reject) {
     console.log('1');
 });
 

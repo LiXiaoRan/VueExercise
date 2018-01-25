@@ -15,7 +15,7 @@
 
 ##axios使用ajax
 
-    ```javascript
+```javascript
     //特殊方法
     let vm = new Vue({
             el: '#app',
@@ -34,7 +34,7 @@
 
             }
         });
-    ```
+```
 
 
 
