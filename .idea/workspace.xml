@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day1/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day2/05promise-ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day2/05promise2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day2/05promiseajaxCustomize.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2/05promise.js" afterPath="$PROJECT_DIR$/Day2/05promise.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2/README.md" afterPath="$PROJECT_DIR$/Day2/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day2/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="77" column="35" lean-forward="true" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+            <state relative-caret-position="209">
+              <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05promiseajaxCustomize.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="05promiseajaxCustomize.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day2/05promiseajaxCustomize.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -45,8 +40,8 @@
       <file leaf-file-name="05promise-ajax.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day2/05promise-ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="76">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -92,11 +87,11 @@
         <option value="$PROJECT_DIR$/Day2/05callBackFunction.html" />
         <option value="$PROJECT_DIR$/Day2/05callBackFunction.js" />
         <option value="$PROJECT_DIR$/Day2/05promise.js" />
-        <option value="$PROJECT_DIR$/Day2/README.md" />
         <option value="$PROJECT_DIR$/Day2/file/05promise2.js" />
         <option value="$PROJECT_DIR$/Day1/README.md" />
         <option value="$PROJECT_DIR$/Day2/05promise-ajax.js" />
         <option value="$PROJECT_DIR$/Day2/05promiseajaxCustomize.html" />
+        <option value="$PROJECT_DIR$/Day2/README.md" />
       </list>
     </option>
   </component>
@@ -235,7 +230,7 @@
       <updated>1516605089289</updated>
       <workItem from="1516605091172" duration="21179000" />
       <workItem from="1516707485882" duration="20922000" />
-      <workItem from="1516856659874" duration="4442000" />
+      <workItem from="1516856659874" duration="4562000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -286,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516857340668</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="使用promise自己封装了一个ajax">
+      <created>1516863426454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516863426454</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46543000" />
+    <option name="totallyTimeSpent" value="46663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1336" height="1026" extended-state="6" />
@@ -327,7 +329,8 @@
     <MESSAGE value="安装vue的chrom扩展插件，并且通过ajax请求json数据" />
     <MESSAGE value="添加了day2的readme" />
     <MESSAGE value="修改了day2的readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了day2的readme" />
+    <MESSAGE value="使用promise自己封装了一个ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用promise自己封装了一个ajax" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -617,14 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day2/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="77" column="35" lean-forward="true" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day2/05callBackFunction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -641,18 +636,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day2/05promise-ajax.js">
+    <entry file="file://$PROJECT_DIR$/Day2/05promiseajaxCustomize.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="323">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day2/05promiseajaxCustomize.html">
+    <entry file="file://$PROJECT_DIR$/Day2/05promise-ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="76">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day2/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
           <folding />
         </state>
       </provider>
