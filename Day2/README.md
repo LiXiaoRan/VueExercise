@@ -120,3 +120,5 @@ ajax({url: './file/carts.json'}).then(function (data) {
                 console.log('err is ' + err);
             })
 ```
+
+## 异步终极解决方案 Async/Await 基于Promise和es6
