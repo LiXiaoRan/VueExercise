@@ -8,8 +8,18 @@
 
 
 
-let p = new promise(function (resolve, reject) {
-    console.log('1');
+let p = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        let a = '蘑菇';
+        resolve(a);//成功和失败是由自己定义的，调用哪个就是哪个.
+        // reject(a);
+    },1000);
+});
+
+p.then(function (data) {
+    console.log('data is ' + data);
+}, function (err) {
+    console.log('err is '+err);
 });
 
 console.log('2');

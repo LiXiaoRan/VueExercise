@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./05promise-ajax.js"></script>
+</head>
+<body>
+<div id="app">
+
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        //专门用来发送ajax的方法
+        created() {//在数据被初始化后被调用,this指向的也是vm实例,这类函数叫做钩子函数
+            ajax({url: './file/carts.json'}).then(function (data) {
+                console.log('data is ' + data);
+            }, function (err) {
+                console.log('err is ' + err);
+            })
+        },
+        data: {
+            products: []
+
+        }
+    });
+</script>
+
+</body>
+</html>
