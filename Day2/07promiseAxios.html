@@ -41,7 +41,7 @@
                     <!--过滤器 元数据不变的情况，只是改变显示的效果 管道符-->
                     <td>{{product.productPrice*product.productCount | toFixed}}</td>
                     <td>
-                        <button class="btn btn-danger">删除</button>
+                        <button class="btn btn-danger" @click="remove(product)">删除</button>
                     </td>
                 </tr>
             </table>
@@ -64,6 +64,11 @@
                 }, err => {//失败
                     console.log('err');
                 })
+            },
+            remove(product) {
+                this.products = this.products.filter(function (item) {
+                    return item !== product;
+                });
             }
         },
         data: {
