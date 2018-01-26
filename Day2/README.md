@@ -122,3 +122,24 @@ ajax({url: './file/carts.json'}).then(function (data) {
 ```
 
 ## 异步终极解决方案 Async/Await 基于Promise和es6
+
+## bootstrap样式框架
+    bootstrap 栅格化布局  默认12列，有一些框架可能是8列或者24列
+    常见的样式  基本样式+增强样式-->
+    default 灰色   success 绿色   danger 红色  warning 警告色 info 浅蓝色  primary 蓝色
+    vue的框架 iview  mint-ui
+
+## :和v-bind等价  指令：动态绑定数据
+<img :src="product.productImg" :title="product.productName">
+这里就是必须使用的动态绑定,主要是因为src并不是vue的属性，所以不能直接取值
+
+
+## filters用来设置过滤方法
+filters: {
+            toFixed(input, argument) {//input是管道符前面的内容
+                if (undefined === argument)
+                    argument = 2;//设置保留小数的默认值为2
+                return ' ￥ ' + input.toFixed(argument);
+            }
+
+        }

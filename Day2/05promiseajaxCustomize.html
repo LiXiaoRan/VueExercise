@@ -16,11 +16,19 @@
         el: '#app',
         //专门用来发送ajax的方法
         created() {//在数据被初始化后被调用,this指向的也是vm实例,这类函数叫做钩子函数
-            ajax({url: './file/carts.json'}).then(function (data) {
-                console.log('data is ' + data);
-            }, function (err) {
-                console.log('err is ' + err);
-            })
+            this.getData();
+        },
+        methods: {
+
+            getData() {
+                ajax({url: './file/carts.json'}).then(function (data) {
+                    vm.products = data;
+                }, function (err) {
+                    console.log('err is ' + err);
+                })
+
+            }
+
         },
         data: {
             products: []

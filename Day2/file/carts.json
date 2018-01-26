@@ -7,10 +7,10 @@
     "productCount":3
   },
   {
-    "isSelected":true,
+    "isSelected":false,
     "productImg":"https://img10.360buyimg.com/cms/s80x80_jfs/t6094/107/710811867/382815/4d54717/592bf165N755a88f0.jpg",
-    "productName":"深入浅出Node.js",
-    "productPrice":57,
+    "productName":"21天精通Node.js",
+    "productPrice":21,
     "productCount":3
   }
 ]
