@@ -21,7 +21,8 @@
             <table class="table table-hover table-bordered">
                 <caption class="h2 text-center text-warning" style="caption-side:top">购物车表格名字</caption>
                 <tr>
-                    <th>全选 <input type="checkbox"></th>
+                    <!--click点击时 checkbox的状态还没有改变 所以拿到的总是相反的  change可以保证值变化后再出发函数-->
+                    <th>全选 <input type="checkbox" v-model="checkAll" @change="switchCheckAll"></th>
                     <td>商品</td>
                     <td>单价</td>
                     <td>数量</td>
@@ -69,10 +70,20 @@
                 this.products = this.products.filter(function (item) {
                     return item !== product;
                 });
+            },
+
+            /**
+             * 全选状态改变
+             */
+            switchCheckAll() {
+                //根据当前自己的状态设置 其他人的状态  实现全选和反选
+                this.products.forEach(item => item.isSelected = this.checkAll);
             }
+
         },
         data: {
-            products: []
+            products: [],
+            checkAll: false//是否全选
 
         },
         //可以有好多的自定义过滤器
