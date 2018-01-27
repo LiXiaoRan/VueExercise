@@ -190,3 +190,11 @@ filters: {
         <div v-show="flag">app</div>
     </transition>
 ```
+    通过如下方法使用animated.css动画
+    enter-active-class="animated 进入动画的名字" leave-active-class=""animated 离开动画的名字""
+例如
+```html
+ <transition enter-active-class="animated rollIn" leave-active-class="animated rollOut">
+        <div v-show="flag">app</div>
+ </transition>
+```

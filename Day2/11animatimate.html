@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    <style>
+        div > div {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <button @click="flag=!flag">切换</button>
+
+    <!--transition是vue自定义的动画组件-->
+    <transition enter-active-class="animated rollIn" leave-active-class="animated rollOut">
+        <!--    v-if操作的是dom，v-show操作的是样式 -->
+        <!--如果if不通过，内部的指令不会再执行了-->
+        <div v-show="flag">app</div>
+    </transition>
+</div>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true
+        }
+
+    })
+
+
+</script>
+</body>
+</html>
