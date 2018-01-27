@@ -21,8 +21,7 @@
             <table class="table table-hover table-bordered">
                 <caption class="h2 text-center text-warning" style="caption-side:top">购物车表格名字</caption>
                 <tr>
-                    <!--click点击时 checkbox的状态还没有改变 所以拿到的总是相反的  change可以保证值变化后再出发函数-->
-                    <th>全选 <input type="checkbox" v-model="checkAll" @change="switchCheckAll"></th>
+                    <th>全选 <input type="checkbox" v-model="switchCheckAll"></th>
                     <td>商品</td>
                     <td>单价</td>
                     <td>数量</td>
@@ -32,7 +31,7 @@
                 <!--数据填充-->
                 <tr v-for="(product,index) in products">
                     <td>
-                        <input type="checkbox" v-model="product.isSelected" @change="checkOne">
+                        <input type="checkbox" v-model="product.isSelected">
                     </td>
                     <!--:和v-bind等价  指令：动态绑定数据-->
                     <td>
@@ -42,7 +41,6 @@
                     <td>
                         {{product.productPrice}}
                     </td>
-                    <!--v-model.number 是让输入框的值编程数字类型  lazy当输入框市区焦点的时候更新数据-->
                     <td>
                         <input type="number" v-model.number.lazy="product.productCount" min="1">
                     </td>
@@ -55,10 +53,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <!--数据一变化就会重新调用sum函数所处最新结果，不会缓存上一次的结果，效率较低
-                    一般用computed
-                    -->
-                    <td colspan="6">总价格：{{sum()|toFixed}}</td>
+
+                    <td colspan="6">总价格：{{sum|toFixed}}</td>
                 </tr>
             </table>
 
@@ -70,8 +66,7 @@
 <script>
     let vm = new Vue({
         el: '#app',
-        //专门用来发送ajax的方法
-        created() {//在数据被初始化后被调用,this指向的也是vm实例,这类函数叫做钩子函数
+        created() {
             this.getData();
         },
         methods: {
@@ -79,10 +74,10 @@
              *获取数据
              */
             getData() {
-                axios.get('./file/carts.json').then(res => {//成功
+                axios.get('./file/carts.json').then(res => {
                     vm.products = res.data;
-                    this.checkOne();//数据加载完成后是否更新全选标记
-                }, err => {//失败
+
+                }, err => {
                     console.log('err');
                 })
             },
@@ -96,45 +91,51 @@
                 });
             },
 
-            /**
-             * 检查是否触发全选
-             */
-            checkOne() {
-                //如果有一个是false  就会返回false
-                this.checkAll = this.products.every(item => item.isSelected);
-            },
 
+        },
+        data: {
+            products: []
+
+        },
+        filters: {
+            toFixed(input, argument) {
+                if (undefined === argument)
+                    argument = 2;
+                return ' ￥ ' + input.toFixed(argument);
+            }
+
+        },
+
+        //当给全选复制时，要影响其他人的变化，当页面刷新时，获取全选值，是根据下面的checkbox的计算出来的结果给全选赋值
+        computed: {
             /**
              * 全选状态改变
              */
-            switchCheckAll() {
-                //根据当前自己的状态设置 其他人的状态  实现全选和反选
-                this.products.forEach(item => item.isSelected = this.checkAll);
+            switchCheckAll: {
+                //当products值发生变化时会重新计算，有缓存
+                get() {//其中的this依然指向实例  默认吗v-model会获取switchCheckAll的值 所以会调用get方法
+                    return this.products.every(p => p.isSelected);
+                },
+                set(val) {//当我们给checkbox赋值的时候
+                    this.products.forEach(p => p.isSelected = val);
+                }
+
             },
             /**
              * 计算总价
              */
-            sum() {
-                return this.products.reduce(function (prev, next) {
-                    if(!next.isSelected) return prev;//如果当前没有被选中则不加
-                    return prev + next.productCount * next.productPrice;
-                }, 0)
-            }
-        },
-        data: {
-            products: [],
-            checkAll: false//是否全选
-
-        },
-        //可以有好多的自定义过滤器
-        filters: {
-            toFixed(input, argument) {//input是管道符前面的内容
-                if (undefined === argument)
-                    argument = 2;//设置保留小数的默认值为2
-                return ' ￥ ' + input.toFixed(argument);
+            sum: {//sum的结果会被缓存，如果以来的数据没有变化就不会重新执行
+                get() {
+                    return this.products.reduce(function (prev, next) {
+                        if (!next.isSelected) return prev;
+                        return prev + next.productCount * next.productPrice;
+                    }, 0)
+                }
             }
 
         }
+
+
     });
 </script>
 

@@ -143,3 +143,39 @@ filters: {
             }
 
         }
+
+
+```javascript
+## computed 用来做一些计算的方法
+
+//当给全选复制时，要影响其他人的变化，当页面刷新时，获取全选值，是根据下面的checkbox的计算出来的结果给全选赋值
+        computed: {
+            /**
+             * 全选状态改变
+             */
+            switchCheckAll: {
+                //当products值发生变化时会重新计算，有缓存
+                get() {//其中的this依然指向实例  默认吗v-model会获取switchCheckAll的值 所以会调用get方法
+                    return this.products.every(p => p.isSelected);
+                },
+                set(val) {//当我们给checkbox赋值的时候
+                    this.products.forEach(p => p.isSelected = val);
+                }
+
+            }
+
+
+            /**
+            * 计算总价
+            */
+            sum: {//sum的结果会被缓存，如果以来的数据没有变化就不会重新执行
+                get() {
+                    return this.products.reduce(function (prev, next) {
+                        if (!next.isSelected) return prev;
+                        return prev + next.productCount * next.productPrice;
+                    }, 0)
+                }
+            }
+
+        }
+```
