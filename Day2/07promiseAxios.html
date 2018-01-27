@@ -31,21 +31,37 @@
                 </tr>
                 <!--数据填充-->
                 <tr v-for="(product,index) in products">
-                    <td><input type="checkbox" v-model="product.isSelected"></td>
+                    <td>
+                        <input type="checkbox" v-model="product.isSelected" @change="checkOne">
+                    </td>
                     <!--:和v-bind等价  指令：动态绑定数据-->
-                    <td><img :src="product.productImg" :title="product.productName">
+                    <td>
+                        <img :src="product.productImg" :title="product.productName">
                         {{product.productName}}
                     </td>
-                    <td>{{product.productPrice}}</td>
+                    <td>
+                        {{product.productPrice}}
+                    </td>
                     <!--v-model.number 是让输入框的值编程数字类型  lazy当输入框市区焦点的时候更新数据-->
-                    <td><input type="number" v-model.number.lazy="product.productCount"></td>
+                    <td>
+                        <input type="number" v-model.number.lazy="product.productCount" min="1">
+                    </td>
                     <!--过滤器 元数据不变的情况，只是改变显示的效果 管道符-->
-                    <td>{{product.productPrice*product.productCount | toFixed}}</td>
+                    <td>
+                        {{product.productPrice*product.productCount | toFixed}}
+                    </td>
                     <td>
                         <button class="btn btn-danger" @click="remove(product)">删除</button>
                     </td>
                 </tr>
+                <tr>
+                    <!--数据一变化就会重新调用sum函数所处最新结果，不会缓存上一次的结果，效率较低
+                    一般用computed
+                    -->
+                    <td colspan="6">总价格：{{sum()|toFixed}}</td>
+                </tr>
             </table>
+
         </div>
     </div>
 
@@ -59,17 +75,33 @@
             this.getData();
         },
         methods: {
+            /**
+             *获取数据
+             */
             getData() {
                 axios.get('./file/carts.json').then(res => {//成功
                     vm.products = res.data;
+                    this.checkOne();//数据加载完成后更新全选标记
                 }, err => {//失败
                     console.log('err');
                 })
             },
+
+            /**
+             * 删除按钮的逻辑
+             */
             remove(product) {
                 this.products = this.products.filter(function (item) {
                     return item !== product;
                 });
+            },
+
+            /**
+             * 单选
+             */
+            checkOne() {
+                //如果又一个是false  就会返回false
+                this.checkAll = this.products.every(item => item.isSelected);
             },
 
             /**
@@ -78,8 +110,16 @@
             switchCheckAll() {
                 //根据当前自己的状态设置 其他人的状态  实现全选和反选
                 this.products.forEach(item => item.isSelected = this.checkAll);
+            },
+            /**
+             * 计算总价
+             */
+            sum() {
+                return this.products.reduce(function (prev, next) {
+                    if(!next.isSelected) return prev;//如果当前没有被选中则不加
+                    return prev + next.productCount * next.productPrice;
+                }, 0)
             }
-
         },
         data: {
             products: [],
