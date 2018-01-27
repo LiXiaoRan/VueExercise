@@ -179,3 +179,14 @@ filters: {
 
         }
 ```
+
+    v-if操作的是dom，v-show操作的是样式
+## 动画
+```html
+    <!--transition是vue自定义的动画组件-->
+    <transition>
+        <!--    v-if操作的是dom，v-show操作的是样式 -->
+        <!--如果if不通过，内部的指令不会再执行了-->
+        <div v-show="flag">app</div>
+    </transition>
+```

@@ -124,13 +124,22 @@
             /**
              * 计算总价
              */
-            sum: {//sum的结果会被缓存，如果以来的数据没有变化就不会重新执行
+            /*sum: {//sum的结果会被缓存，如果以来的数据没有变化就不会重新执行
                 get() {
                     return this.products.reduce(function (prev, next) {
                         if (!next.isSelected) return prev;
                         return prev + next.productCount * next.productPrice;
                     }, 0)
                 }
+            }*/
+
+            //也可以这样写,如果将sum写成函数，就会默认调用get方法
+            sum() {//sum的结果会被缓存，如果以来的数据没有变化就不会重新执行
+                return this.products.reduce(function (prev, next) {
+                    if (!next.isSelected) return prev;
+                    return prev + next.productCount * next.productPrice;
+                }, 0)
+
             }
 
         }

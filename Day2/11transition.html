@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div > div {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+
+        .one-enter {
+            opacity: 0;
+            transition: 1s linear
+        }
+
+        .one-enter-active {
+            transition: 1s linear
+        }
+
+        .one-leave-active {
+            opacity: 0;
+            transition: 1s linear
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <!--transition是vue自定义的动画组件-->
+    <transition name="one">
+        <!--    v-if操作的是dom，v-show操作的是样式 -->
+        <!--如果if不通过，内部的指令不会再执行了-->
+        <div v-show="flag">app</div>
+    </transition>
+    <button @click="flag=!flag">切换</button>
+</div>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true
+        }
+
+    })
+
+
+</script>
+</body>
+</html>
