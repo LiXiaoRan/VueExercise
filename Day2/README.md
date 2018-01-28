@@ -135,6 +135,7 @@ ajax({url: './file/carts.json'}).then(function (data) {
 
 
 ## filters用来设置过滤方法
+```javascript
 filters: {
             toFixed(input, argument) {//input是管道符前面的内容
                 if (undefined === argument)
@@ -143,6 +144,19 @@ filters: {
             }
 
         }
+```
+        //在调用的时候可以这样
+        {{123.446|toFixed}}    //结果 123.45
+        {{123.446|toFixed(3)}}  //结果 123.446
+
+```javascript
+
+ //全局过滤器 过滤器要放在页面的顶部
+    Vue.filter('appFilters1',function (data) {
+        return 'lr  ' + data;
+    });
+```
+
 
 
 ```javascript

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两个实例</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app1">{{'hello'|appFilters1}}</div>
+<div id="app2">{{'hello'|appFilters1}}</div>
+
+<script>
+    //全局过滤器 过滤器要放在页面的顶部
+    Vue.filter('appFilters1',function (data) {
+        return 'lr  ' + data;
+    });
+
+    new Vue({
+        el: '#app1',
+        filters: {
+            appFilters1(data) {
+                return 'lr  ' + data;
+            }
+        }
+    });
+
+    new Vue({
+        el: '#app2'
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 modifires</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div id="parent" @click.once="parent">parent
+        <div id="child" @click.self="child">child
+            <div id="grandSon" @click="grandSon">grandSon</div>
+        </div>
+    </div>
+    <a href="www.baidu.com" @click.prevent="parent">百度</a>
+</div>
+<script>
+
+    let vm = new Vue({
+        el: '#app',
+        data: {},
+        methods: {
+            parent() {
+                alert('parent');
+            },
+            child() {
+                alert('child');
+            },
+            grandSon(e) {
+                alert('grandSon');
+//                e.cancelBubble = true;//阻止事件冒泡
+            }
+
+        }
+    })
+</script>
+
+</body>
+</html>

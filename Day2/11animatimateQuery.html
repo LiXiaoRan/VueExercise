@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    <style>
+        div > div {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <button @click="flag=!flag">切换</button>
+    <input type="text" v-model="query">
+    <transition-group enter-active-class="animated rollIn" leave-active-class="animated rollOut">
+        <!--key一定要不同，这样才能每一个item都有动画，如果item一样的话就不会有动画了，而会复用之前的。-->
+        <div v-for="(a,index) in newArr" :key="Math.random()">{{a}}</div>
+    </transition-group>
+</div>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true,
+            arr: [1, 2, 3, 4, 5],
+            query: ''
+        },
+        computed: {
+            newArr() {
+                return this.arr.filter(item => item == this.query);
+            }
+        }
+
+    })
+
+
+</script>
+</body>
+</html>
