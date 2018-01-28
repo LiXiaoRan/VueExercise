@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inputVerify</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="a">{{msg}}
+</div>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            a: ''
+        },
+        computed: {
+//           输入框 实时计算提示
+            msg: {  //如果写了set方法，并且val给了别人，当前的a就不会被赋予结果了
+                get() {
+                    if (this.a.length < 3) {
+                        return '少了'
+                    }
+                    if (this.a.length > 6) {
+                        return '多了'
+                    }
+                    return '';
+                },
+                set(val) {
+
+                }
+            }
+
+        }
+    });
+</script>
+</body>
+</html>
