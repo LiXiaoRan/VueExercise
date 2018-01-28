@@ -19,7 +19,7 @@
         },
         computed: {
 //           输入框 实时计算提示
-            msg: {  //如果写了set方法，并且val给了别人，当前的a就不会被赋予结果了
+            msg: {
                 get() {
                     if (this.a.length < 3) {
                         return '少了'

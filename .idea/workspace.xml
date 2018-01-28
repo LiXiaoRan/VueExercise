@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day3/inputVerify.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3/inputVerify.html" afterPath="$PROJECT_DIR$/Day3/inputVerify.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,8 +63,8 @@
       <file leaf-file-name="inputVerify.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day3/inputVerify.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="133">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -285,7 +285,7 @@
       <updated>1516605089289</updated>
       <workItem from="1516605091172" duration="21179000" />
       <workItem from="1516707485882" duration="20922000" />
-      <workItem from="1516856659874" duration="42829000" />
+      <workItem from="1516856659874" duration="43472000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -413,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517116887855</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="实时计算提示">
+      <created>1517118367041</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1517118367041</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84930000" />
+    <option name="totallyTimeSpent" value="85573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -475,7 +482,8 @@
     <MESSAGE value="vue动画" />
     <MESSAGE value="animated.css动画" />
     <MESSAGE value="写了一些笔记并且写了computed的一个全选的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="写了一些笔记并且写了computed的一个全选的逻辑" />
+    <MESSAGE value="实时计算提示" />
+    <option name="LAST_COMMIT_MESSAGE" value="实时计算提示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -863,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day3/inputVerify.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="133">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
