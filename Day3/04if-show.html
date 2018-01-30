@@ -7,6 +7,29 @@
 
 </head>
 <body>
+<div id="app">
+    <!--<div v-if="false">1 v-if</div>
+    &lt;!&ndash;<div>中间的</div>  v-else必须连着v-if不然就会报错&ndash;&gt;
+    <div v-else>2 v-else</div>-->
+<!--template标签是vue提供的没有任何意义，仅仅是用来包裹元素用的，v-show不支持template 只能在v-if上使用-->
+    <template v-if="flag">
+        <div>就这样</div>
+        <div>就这样</div>
+        <div>就这样</div>
+        <div>就这样</div>
+    </template>
+    <div v-else>还是这样吧</div>
+
+
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: false
+        }
+    })
+</script>
 
 </body>
 </html>

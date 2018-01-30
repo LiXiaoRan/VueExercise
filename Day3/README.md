@@ -57,6 +57,49 @@ let vm = new Vue({
 - 对于任何复杂逻辑都应该用computed
 
 ##v-if/v-show
-- v-if操作的是dom v-if可以和v-else-if，v-else连写
+- v-if操作的是dom v-if可以和v-else-if，v-else连写,v-else必须连着v-if不然就会报错
 - v-show操作的是样式
+
+## templete
+>    template标签是vue提供的没有任何意义，仅仅是用来包裹元素用的，v-show不支持template 只能在v-if上使用
+```html
+<!--template标签是vue提供的没有任何意义，仅仅是用来包裹元素用的，v-show不支持template-->
+    <template v-if="flag">
+        <div>就这样</div>
+        <div>就这样</div>
+        <div>就这样</div>
+        <div>就这样</div>
+    </template>
+    <div v-else>还是这样吧</div>
+```
+
+> 默认情况下在切换dom时相同的dom结构会被复用，不过不需要复用需要加key key="keyID"
+
+
+## V-bind 简写 :
+- 动态绑定“属性”。例如 
+```html
+<img :src="..." :width="w" />
+```
+用法；
+```html
+<div id="app">
+    <!--//动态绑定class,:class绑定的样式和class绑定的样式不冲突-->
+    <!--写法：1对象格式,如下-->
+    <div class="x y" :class="{z:flag,y:true}">div</div>
+    <!--写法：2数组-->
+    <div class="x" :class="[class1,class2,{z:false}]">div</div>
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true,
+            class1: 'x',
+            class2: 'y'
+        }
+    })
+</script>
+```
+
 

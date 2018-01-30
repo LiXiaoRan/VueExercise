@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <style>
+        .x {
+            background: blue;
+        }
+
+        .y {
+            font-size: 100px;
+        }
+
+        .z {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--//动态绑定class,:class绑定的样式和class绑定的样式不冲突-->
+    <!--写法：1对象格式,如下-->
+    <div class="x y" :class="{z:flag,y:true}">div</div>
+    <!--写法：2数组-->
+    <div class="x" :class="[class1,class2,{z:false}]">div</div>
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true,
+            class1: 'x',
+            class2: 'y'
+        }
+    })
+</script>
+
+</body>
+</html>
