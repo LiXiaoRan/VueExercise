@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="val">{{fullName}}
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            firstName: 'swust',
+            lastName: 'LR',
+            val: '',//swust-val-LR
+//            fullName: ''
+        },
+        /*watch: {  /这里没有异步所以不应该用watch应该用computed
+
+            val(newValue) {
+                this.fullName = this.firstName + newValue + this.lastName;
+            }
+        },*/
+
+        computed: {
+            fullName() {
+                return this.firstName + this.val + this.lastName;
+            }
+        }
+
+    });
+</script>
+</body>
+</html>

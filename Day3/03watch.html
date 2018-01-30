@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inputVerify</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="a">{{msg}}
+</div>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            a: ''
+        },
+        watch: {//只有值变化的时候才能出发,支持异步,其他情况computed更加常用
+            a(newValue, oldValue) { //watch的属性名要和观察的人的名字一致
+                if (newValue.length < 3) {
+                    return this.msg = '太少';
+                }
+                if (newValue.length > 6) {
+                    return this.msg = '太多';
+                }
+                this.msg = null;
+                console.log('new is ' + newValue + "old is " + oldValue);
+
+            }
+        }
+    });
+</script>
+</body>
+</html>
