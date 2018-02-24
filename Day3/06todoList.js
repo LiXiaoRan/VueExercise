@@ -13,7 +13,8 @@ let vm = new Vue({
             }
 
         ],
-        title: ''
+        title: '',
+        cur: ''
 
     },
     methods: {
@@ -21,11 +22,15 @@ let vm = new Vue({
          *添加逻辑
          */
         add() {
+            // if(this.title!==''){
             this.todos.push({
                 isSelected: false,
                 title: this.title
             });
             this.title = '';
+            // }else{
+            //     alert("输入不能为空")
+            // }
         },
         /**
          * 删除逻辑
@@ -35,6 +40,12 @@ let vm = new Vue({
             this.todos = this.todos.filter(function (item) {
                 return item !== todo;
             })
+        },
+        remember(todo) {
+            this.cur = todo;
+        },
+        calcelEdit() {
+            this.cur = '';
         }
     },
     computed: {

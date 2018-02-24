@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="../node_modules/vue/dist/vue.js"></script>
     <script src="../node_modules/axios/dist/axios.js"></script>
-
+    <style>
+        .del_line {
+            text-decoration: line-through;
+            color: #cccccc;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
@@ -33,11 +38,23 @@
                     <div class="card-body">
 
                         <div class="card">
+
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" v-for="(todo,index) in todos">
-                                    <input type="checkbox" v-model="todo.isSelected">
-                                    {{todo.title}}
+                                <li class="list-group-item" v-for="(todo,index) in todos" @dblclick="remember(todo)">
+
+                                    <span v-show="cur!=todo">
+                                        <input type="checkbox" v-model="todo.isSelected">
+                                        <!--这里冒号 " ：" 相当于v-bind动态绑定数据,所以此时如果isSelected为true，此时del_line生效-->
+                                        <span :class="{del_line:todo.isSelected}">
+                                            {{todo.title}}
+                                        </span>
+                                    </span>
+
+                                    <!--blur是失去焦点事件-->
+                                    <input type="text" v-model="todo.title" v-show="cur==todo" @keyup.enter="calcelEdit" @blur="calcelEdit">
+
                                     <button class="float-right btn  btn-danger btn-sm" @click="remove(todo)">删除</button>
+
                                 </li>
                             </ul>
                         </div>
