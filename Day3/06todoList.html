@@ -23,16 +23,21 @@
 
                 <div class="card ">
                     <div class="card-header text-center">
-                        亲~ ^_^ 你有 N 件事要完成
+                        亲~ ^_^ 你有 {{count}} 件事要完成
+                        <div class="container">
+                            <input type="text" v-model="title" @keyDown.enter="add">
+                            <button class="btn-success btn btn-sm" @click="add">添加</button>
+                        </div>
+
                     </div>
                     <div class="card-body">
 
                         <div class="card">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <input type="checkbox">
-                                    睡觉
-                                    <button class="float-right btn btn-primary btn-danger btn-sm">删除</button>
+                                <li class="list-group-item" v-for="(todo,index) in todos">
+                                    <input type="checkbox" v-model="todo.isSelected">
+                                    {{todo.title}}
+                                    <button class="float-right btn  btn-danger btn-sm" @click="remove(todo)">删除</button>
                                 </li>
                             </ul>
                         </div>
@@ -59,12 +64,7 @@
 
 
 </div>
-<script>
-    let vm = new Vue({
-        el: '#app',
-        data: {}
-    })
-</script>
 
+<script src="06todoList.js"></script>
 </body>
 </html>
