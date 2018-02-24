@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo-List</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ToDo</a>
+    </nav>
+
+    <div class="container">
+        <!--一旦设置row，div就被分为了12列-->
+        <div class="row">
+            <!--这里div占12列，占满了第二层的div md代表是中型屏幕-->
+            <div class="col-md-12">
+
+                <div class="card ">
+                    <div class="card-header text-center">
+                        亲~ ^_^ 你有 N 件事要完成
+                    </div>
+                    <div class="card-body">
+
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="checkbox">
+                                    睡觉
+                                    <button class="float-right btn btn-primary btn-danger btn-sm">删除</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">全部任务</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">已完成</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">未完成</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {}
+    })
+</script>
+
+</body>
+</html>

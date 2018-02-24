@@ -102,4 +102,42 @@ let vm = new Vue({
 </script>
 ```
 
+## 实现单页开发的方式
+- 通过hash记录跳转的路径（可以产生历史管理）
+- 浏览器自带的历史管理的方法history如history.pushState()可能会导致404错误
+> 开发时使用hash的方式，上线的话会使用history
+
+
+
+##  class="row"
+div的class一旦设置为row，此时的这个div就被划分成12列
+
+```html
+    <div class="container">
+        <!--一旦设置row，div就被分为了12列-->
+        <div class="row">
+            <!--这里div占12列，占满了第二层的div md代表是中型屏幕-->
+            <div class="col-md-12">
+
+                <div class="card text-center">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+```
+这就是所谓的栅格化布局
+
+
 
