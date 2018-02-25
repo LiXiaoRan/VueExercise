@@ -1,5 +1,14 @@
 let vm = new Vue({
     el: '#app',
+    directives: {
+        //这里写自定义指令
+        focus(el, bindings) {
+            //当cur==todo的时候，即点击当前的li是让内部的输入框获取焦点
+            if (bindings.value) {
+                el.focus();//这个是dom的方法，当前的dom元素获取焦点
+            }
+        }
+    },
     data: {
         todos: [
 

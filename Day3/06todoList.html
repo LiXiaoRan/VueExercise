@@ -50,8 +50,8 @@
                                         </span>
                                     </span>
 
-                                    <!--blur是失去焦点事件-->
-                                    <input type="text" v-model="todo.title" v-show="cur==todo" @keyup.enter="calcelEdit" @blur="calcelEdit">
+                                    <!--blur是失去焦点事件,只要失去焦点就会调用calcelEdit方法-->
+                                    <input type="text" v-model="todo.title" v-show="cur==todo" v-focus="cur==todo" @keyup.enter="calcelEdit" @blur="calcelEdit">
 
                                     <button class="float-right btn  btn-danger btn-sm" @click="remove(todo)">删除</button>
 

@@ -162,4 +162,6 @@ el指代的当前的dom，把v-color放在那里就是那里.bindings是绑定�
         methods: {}
     });
 </script>
+
+有些时候自定义的指令可能会特别长如在html中写v-focus-aa，这个时候在js中定义的时候应该写成波峰的形式，即focusAa
 ```
