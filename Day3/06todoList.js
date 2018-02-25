@@ -9,8 +9,15 @@ let vm = new Vue({
             }
         }
     },
-    created(){//初始化方法，页面加载时会调用，同理刷新时也会调用
-            this.todos=JSON.parse(localStorage.getItem('todosData'))||this.todos;//有数据就读取，没有数据就用默认的
+    created() {//初始化方法，页面加载时会调用，同理刷新时也会调用
+        this.todos = JSON.parse(localStorage.getItem('todosData')) || this.todos;//有数据就读取，没有数据就用默认的
+
+        //如果有hash值则取出并且裁减掉前两个符号如果没有的话，就用'all'替换
+        this.hash = window.location.hash.slice(2) || 'all';
+        //监控hash值的变化即链接中#后面的内容包括#号,
+        window.addEventListener('hashchange', () => {
+            this.hash = window.location.hash.slice(2) || 'all';
+        }, false)
     },
     data: {
         todos: [
@@ -26,18 +33,19 @@ let vm = new Vue({
 
         ],
         title: '',
-        cur: ''
+        cur: '',
+        hash: ''
 
     },
-    watch:{
+    watch: {
         /*//用来监控data中的元素todos，如果todos发生变化则会执行，这种写法只能监视一层变化。
         todos(){
 
         }*/
-        todos:{
-            handler(){//这种写法是深度监控，可以监控多层变化
-                localStorage.setItem('todosData',JSON.stringify(this.todos));//localstorage默认存的是字符串，为了存取方便这里转换为json再进行存取
-            },deep:true
+        todos: {
+            handler() {//这种写法是深度监控，可以监控多层变化
+                localStorage.setItem('todosData', JSON.stringify(this.todos));//localstorage默认存的是字符串，为了存取方便这里转换为json再进行存取
+            }, deep: true
         }
     }
     ,

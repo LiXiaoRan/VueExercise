@@ -207,4 +207,7 @@ todos:{
             },deep:true
         }
 ```
-
+## 自创的关于一个组件动态绑定多个class的写法
+```html
+    <a :class="{ 'active': hash==='finish','nav-link':true}" href="#/finish">已完成</a>
+```
