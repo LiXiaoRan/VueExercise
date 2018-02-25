@@ -163,5 +163,48 @@ el指代的当前的dom，把v-color放在那里就是那里.bindings是绑定�
     });
 </script>
 
-有些时候自定义的指令可能会特别长如在html中写v-focus-aa，这个时候在js中定义的时候应该写成波峰的形式，即focusAa
 ```
+有些时候自定义的指令可能会特别长如在html中写v-focus-aa，这个时候在js中定义的时候应该写成波峰的形式，即focusAa
+
+
+## watch 监控数据变化
+ watch:{
+        //用来监控data中的元素todos，如果todos发生变化则会执行
+        todos(){        }} 此时data中必须要有todos这个数据元素
+如下所示：
+```javascript
+    data: {
+        todos: [
+
+            {
+                isSelected: false,
+                title: '睡觉'
+            },
+            {
+                isSelected: true,
+                title: '吃饭'
+            }
+
+        ],
+        title: '',
+        cur: ''
+
+    },
+    watch:{
+        //用来监控data中的元素todos，如果todos发生变化则会执行
+        todos(){
+        //此处监控后的写逻辑
+        }
+    }
+```
+但是`watch`有局限性，默认只会监控一层的数据变化，例如上面的`todos`，如果里面的仅仅是title发生了变化其他的不变的话，是无法触发
+监控的。
+深度监控的写法如下：
+```javascript
+todos:{
+            handler(){//这种写法是深度监控，可以监控多层变化
+                alert();
+            },deep:true
+        }
+```
+

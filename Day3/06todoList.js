@@ -9,6 +9,9 @@ let vm = new Vue({
             }
         }
     },
+    created(){//初始化方法，页面加载时会调用，同理刷新时也会调用
+            this.todos=JSON.parse(localStorage.getItem('todosData'))||this.todos;//有数据就读取，没有数据就用默认的
+    },
     data: {
         todos: [
 
@@ -26,6 +29,18 @@ let vm = new Vue({
         cur: ''
 
     },
+    watch:{
+        /*//用来监控data中的元素todos，如果todos发生变化则会执行，这种写法只能监视一层变化。
+        todos(){
+
+        }*/
+        todos:{
+            handler(){//这种写法是深度监控，可以监控多层变化
+                localStorage.setItem('todosData',JSON.stringify(this.todos));//localstorage默认存的是字符串，为了存取方便这里转换为json再进行存取
+            },deep:true
+        }
+    }
+    ,
     methods: {
         /**
          *添加逻辑
