@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3/06todoList.html" afterPath="$PROJECT_DIR$/Day3/06todoList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3/06todoList.js" afterPath="$PROJECT_DIR$/Day3/06todoList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3/README.md" afterPath="$PROJECT_DIR$/Day3/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day3/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -70,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="06todoList.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="06todoList.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day3/06todoList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="394">
+              <caret line="42" column="94" lean-forward="false" selection-start-line="42" selection-start-column="94" selection-end-line="42" selection-end-column="94" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,13 +84,12 @@
       <file leaf-file-name="06todoList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day3/06todoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="660">
+              <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="19" />
               <folding>
                 <element signature="e#1385#1650#0" expanded="false" />
                 <element signature="e#1736#1861#0" expanded="false" />
                 <element signature="e#1886#1926#0" expanded="false" />
-                <element signature="e#2009#2115#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -176,9 +174,9 @@
         <option value="$PROJECT_DIR$/Day3/04v-bind.html" />
         <option value="$PROJECT_DIR$/Day3/04v-bindStyle.html" />
         <option value="$PROJECT_DIR$/Day3/10directive.html" />
+        <option value="$PROJECT_DIR$/Day3/README.md" />
         <option value="$PROJECT_DIR$/Day3/06todoList.js" />
         <option value="$PROJECT_DIR$/Day3/06todoList.html" />
-        <option value="$PROJECT_DIR$/Day3/README.md" />
       </list>
     </option>
   </component>
@@ -316,7 +314,7 @@
       <workItem from="1516856659874" duration="44089000" />
       <workItem from="1517294237413" duration="742000" />
       <workItem from="1517295059263" duration="12157000" />
-      <workItem from="1519450756747" duration="29784000" />
+      <workItem from="1519450756747" duration="30861000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -514,11 +512,25 @@
       <option name="project" value="LOCAL" />
       <updated>1519525179718</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="修复了底部选中的bug">
+      <created>1519550052465</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1519550052465</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修复了底部选中的bug">
+      <created>1519551207514</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1519551207514</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128873000" />
+    <option name="totallyTimeSpent" value="129950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -527,7 +539,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14330874" sideWeight="0.4961915" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33949944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -579,7 +591,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="第8、9集的内容" />
     <MESSAGE value="day1 的全部内容已经完毕" />
     <MESSAGE value="day2 开头的复习部分" />
     <MESSAGE value="安装vue的chrom扩展插件，并且通过ajax请求json数据" />
@@ -604,7 +615,8 @@
     <MESSAGE value="自定义指令" />
     <MESSAGE value="通过自定义指令修复了todolist的焦点问题" />
     <MESSAGE value="todolist添加本地功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="todolist添加本地功能" />
+    <MESSAGE value="修复了底部选中的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了底部选中的bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,34 +1052,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/06todoList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="e#1385#1650#0" expanded="false" />
-            <element signature="e#1736#1861#0" expanded="false" />
-            <element signature="e#1886#1926#0" expanded="false" />
-            <element signature="e#2009#2115#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-159">
           <caret line="3077" column="1" lean-forward="false" selection-start-line="3077" selection-start-column="1" selection-end-line="3077" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/06todoList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,6 +1144,28 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day3/06todoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="19" />
+          <folding>
+            <element signature="e#1385#1650#0" expanded="false" />
+            <element signature="e#1736#1861#0" expanded="false" />
+            <element signature="e#1886#1926#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day3/06todoList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="42" column="94" lean-forward="false" selection-start-line="42" selection-start-column="94" selection-end-line="42" selection-end-column="94" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

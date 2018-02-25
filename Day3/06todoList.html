@@ -40,7 +40,7 @@
                         <div class="card">
 
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" v-for="(todo,index) in todos" @dblclick="remember(todo)">
+                                <li class="list-group-item" v-for="(todo,index) in filterTodos" @dblclick="remember(todo)">
 
                                     <span v-show="cur!=todo">
                                         <input type="checkbox" v-model="todo.isSelected">

@@ -83,6 +83,12 @@ let vm = new Vue({
     computed: {
         count() {
             return this.todos.filter(item => !item.isSelected).length;
+        },
+        filterTodos() {
+            if (this.hash === 'all') return this.todos;
+            else if (this.hash === 'finish') return this.todos.filter(item => item.isSelected)
+            else if (this.hash === 'unfinish') return this.todos.filter(item => !item.isSelected)
+            return this.todos;
         }
     }
 
