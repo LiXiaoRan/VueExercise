@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>挂载</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p ref="p1">{{msg}}</p>
+</div>
+<script>
+    //this.$data vm上的数据
+    // this.$watch 监控
+    // this.$el 当前的el元素
+    // this.$set 后加的属性实现响应式变化
+    // this.$options vm上的所有属性
+//    this.$nextTick()//异步方法，等待dom完成后才会执行，所有的dom操作最好放在这个里面
+//    this.$refs
+    let vm = new Vue({
+        el: '#app',
+        a:1,
+        data: {msg: 'hello'},
+        mounted() {
+            console.log(this.$options);
+
+            this.$nextTick(function () {
+                console.log('vm is '+vm);
+            })
+
+            //如果dom元素不是通过v-for循环出来的 只能获取到一个。
+            console.log(this.$refs.p1);
+        }
+    })
+</script>
+
+</body>
+</html>
