@@ -140,4 +140,26 @@ div的class一旦设置为row，此时的这个div就被划分成12列
 这就是所谓的栅格化布局
 
 
+## directives 自定义指令的用法
+el指代的当前的dom，把v-color放在那里就是那里.bindings是绑定的属性,这个绑定的属性可以通过arguments来获取
+```html
+<div id="app">
+    <button v-color="flag">变色</button>
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        directives: {
+            color(el,bindings) {//el指代的当前的dom，把v-color放在那里就是那里.bindings是绑定的属性
+                el.style.background=bindings.value;
+            }
 
+        },
+        data: {
+            flag: 'red'
+
+        },
+        methods: {}
+    });
+</script>
+```
