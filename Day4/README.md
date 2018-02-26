@@ -186,3 +186,92 @@ Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解
 当捕获一个来自子孙组件的错误时被调用。此钩子会收到三个参数：错误对象、发生错误的组件实例以及一个包含错误来源信息的字符串。此钩子可以返回 false 以阻止该错误继续向上传播。
 
 ![avatar](https://cn.vuejs.org/images/lifecycle.png)
+
+
+## 组件 component
+##全局组件
+1 自定义组件的名字不支持大写。（首字母可以大写）最好全部小写
+2 多个单词可以用 - 连接
+3 html采用的-可以在js中转为驼峰
+4 组件中的数据必须是函数类型，返回一个实例作为组件的数据
+5 组件中定义的数据只能在自己的模板中使用
+```html
+<div id="app">
+    <my-div></my-div>
+</div>
+<script>
+    Vue.component('my-div', {
+        //这里是组件的定义
+        template: '<div>自定义的{{msg}}</div>',
+        data() {
+            //组件中的数据必须是函数类型，返回一个实例作为组件的数据
+            return {msg: 'msg helloworld'}//只能在自己的末班中使用，见上面
+        }
+    });
+
+    //一般写插件的时候全局组件使用的多一些
+    //用法 全局组件，可以声明一次在任何地方使用，局部组件：必须告诉这个组件属于谁
+    let vm = new Vue({
+        el:'#app'
+    })
+
+</script>
+```
+##局部组件
+使用三部曲
+1 创建这个组件
+2 注册这个组件
+3 引用这个组件
+
+```html
+<div id="app">
+    <!--3 使用组件-->
+    <mydiv></mydiv>
+</div>
+<script>
+
+    let mydiv={template:'<div>局部组件</div>'};//1 创建组件
+    let vm = new Vue({
+        el: '#app',
+        components:{
+            mydiv:mydiv//2 注册组件  这里es6可以简写，只写一个mydiv
+        },
+        data:{
+
+        }
+    })
+
+</script>
+```
+
+## 组件嵌套
+如果要在一个组建中使用另一个组件1. 先保证组件真是存在 2在需要引用的实例上通过components来注册 3 组件需要再父极的模板中通过标签的形式引入
+```javascript
+
+    let grandson = {
+        template: '<div>grandson</div>'
+    };
+    let son = {
+        template: '<div>son<grandson></grandson></div>',
+        components: {
+            grandson
+        }
+
+    };
+    let parent = {
+        template: '<div>parent<son></son></div>',
+        components: {
+            son
+        }
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        data: {},
+        template:'<parent></parent>',
+        components: {
+            parent
+        }
+    })
+
+```

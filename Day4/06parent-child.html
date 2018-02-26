@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父传子</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    父亲:{{money}}
+    <!--给儿子加了一个m属性，属性对应的值是属于父亲的-->
+    <child :m="money" :a="1"></child>
+    <!--这里的a如果不加冒号后面的1就是String类型，加上后就是Number类型-->
+
+</div>
+<script>
+    //父组件传递子组件
+    let vm = new Vue({
+        el: '#app',
+        data: {money: 100},
+        components: {
+            child: { //另一个组件，新的作用域，所以这里面不能通过{{money}}的方法来获取money的值
+//                props:['m','a'],//数组形式的写法。取出m属性的值;会在当前child组件上声明一个m属性,可以通过this.m来获取。值是父亲的
+                props: { //对象方式可以对数据类型进行过滤
+                    m: {
+                        type: [String, Boolean, Array, Number, Function],
+//                        default: 0//设置默认值
+                        require: true,//强制必须传m，不然就会报错.不能和default同用
+                        validator(val){//校验器，val代表传入的参数,返回true通过，false不通过（用的不多）自定义校验器
+
+                        }
+                    },
+                    a: {
+                        default: 0//设置默认值
+                    }
+                },
+                template: '<div>儿子：{{m}} {{a}}</div>'
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

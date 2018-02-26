@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <my-div></my-div>
+</div>
+<script>
+    Vue.component('my-div', {
+        //这里是组件的定义
+        template: '<div>自定义的{{msg}}</div>',
+        data() {
+            //组件中的数据必须是函数类型，返回一个实例作为组件的数据
+            return {msg: 'msg helloworld'}//只能在自己的模板中使用，见上面
+        }
+    });
+
+    //一般写插件的时候全局组件使用的多一些
+    //用法 全局组件，可以声明一次在任何地方使用，局部组件：必须告诉这个组件属于谁
+    let vm = new Vue({
+        el: '#app'
+    })
+
+</script>
+
+</body>
+</html>

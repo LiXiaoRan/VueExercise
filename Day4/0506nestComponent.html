@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script>
+//如果要在一个组建中使用另一个组件1. 先保证组件真是存在 2在需要引用的实例上通过components来注册 3 组件需要再父极的模板中通过标签的形式引入
+
+    let grandson = {
+        template: '<div>grandson</div>'
+    };
+    let son = {
+        template: '<div>son<grandson></grandson></div>',
+        components: {
+            grandson
+        }
+
+    };
+    let parent = {
+        template: '<div>parent<son></son></div>',
+        components: {
+            son
+        }
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        data: {},
+        template:'<parent></parent>',
+        components: {
+            parent
+        }
+    })
+
+</script>
+</body>
+</html>

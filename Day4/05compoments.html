@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <!--3 使用组件-->
+    <mydiv ></mydiv>
+    <youdiv></youdiv>
+</div>
+<script>
+
+    let obj={school:'swust'};
+    let mydiv = {
+        template: '<div @click="fn">局部组件1{{school}}</div>',
+        data(){
+            return obj;
+        },
+        methods:{
+            fn(){
+                this.school='hello';
+            }
+        }
+
+    };//1 创建组件
+    let youdiv = {template: '<div>局部组件2</div>'}
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            mydiv: mydiv,//2 注册组件  这里es6可以简写，只写一个mydiv
+            youdiv
+        },
+        data: {}
+    })
+
+</script>
+
+</body>
+</html>
