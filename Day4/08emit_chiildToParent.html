@@ -7,10 +7,33 @@
 
 </head>
 <body>
-<div id="app"></div>
+<!--父亲绑定一些事件，儿子触发这个事件 将参数传递过去 单向数据流，父亲数据刷新，儿子就刷新-->
+<div id="app">
+    父亲: {{money}}
+    <!--这里面 m是儿子的 money是父亲的。同理child-msg是儿子的，things是父亲的-->
+    <child :m="money" @child-msg="things"></child>
+</div>
 <script>
     let vm = new Vue({
-        el:'#app'
+        el: '#app',
+        data: {money: 400},
+        methods: {
+            things(val, val2) {
+                this.money = val;
+                alert(val + ' ' + val2);
+            }
+        },
+        components: {
+            child: {
+                props: ['m'],
+                template: '<div>儿子: {{m}} <button @click="getMoney()">加钱</button></div>',
+                methods: {
+                    getMoney() {
+                        this.$emit('child-msg', 800, 600)//触发自己的自定义事件,让父组件的方法执行。
+                    }
+                }
+            }
+        }
     })
 </script>
 </body>
