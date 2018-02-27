@@ -275,3 +275,42 @@ Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解
     })
 
 ```
+
+## 组件通信 父传子 ：props，子传父：emit-on
+
+## 自定义组件
+* dialog示例
+这是通过h5写出的一个组件。
+```html
+    <style>
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: gray;
+        }
+
+        .dialog {
+            width: 400px;
+            height: 250px;
+            background: #ffffff;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+
+        }
+    </style>
+
+    <div class="mask">
+        <button>弹窗</button>
+        <!--<dialog class="dialog" :show="false" @close="fn"></dialog>-->
+        <div class="dialog">
+            <button>关闭</button>
+        </div>
+    </div>
+```
+接下来将通过vue组件的形式去实现
+

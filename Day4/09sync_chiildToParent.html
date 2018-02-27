@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>子传父</title>
+    <title>sync</title>
     <script src="../node_modules/vue/dist/vue.js"></script>
 
 </head>
@@ -11,24 +11,26 @@
 <div id="app">
     父亲: {{money}}
     <!--这里面 m是儿子的 money是父亲的。-->
-    <child :m="money" @child-msg="things"></child>
+    <!--<child :m="money" @updata:m="val=>this.money=val"></child>-->
+    <child :m.sync="money"></child>
+    <!--上面是注释部分的一种简写的写法 但是一般不用-->
 </div>
 <script>
     let vm = new Vue({
         el: '#app',
         data: {money: 400},
-        methods: {
+/*        methods: {
             things(val, val2) {
                 this.money = val;
             }
-        },
+        },*/
         components: {
             child: {
                 props: ['m'],
                 template: '<div>儿子: {{m}} <button @click="getMoney()">加钱</button></div>',
                 methods: {
                     getMoney() {
-                        this.$emit('child-msg', 800, 600)//触发自己的自定义事件,让父组件的方法执行。
+                        this.$emit('update:m', 800, 600)//触发自己的自定义事件,让父组件的方法执行。
                     }
                 }
             }

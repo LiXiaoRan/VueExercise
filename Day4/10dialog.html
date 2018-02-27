@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dialog</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+    <style>
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: gray;
+        }
+
+        .dialog {
+            width: 400px;
+            height: 250px;
+            background: #ffffff;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <button @click="flag=true">弹窗</button>
+
+    <msg-box :show="flag" @close-box="fnclose"></msg-box>
+</div>
+
+<template id="dialog-temp">
+    <div class="mask" v-show="show">
+        <div class="dialog">
+            <button @click="closeBtn">关闭</button>
+        </div>
+    </div>
+</template>
+<script>
+    let msgBox = {
+        props: ['show'],
+        template: '#dialog-temp',
+        methods: {
+            closeBtn() {
+                this.$emit('close-box', false);
+            }
+        }
+    };
+    let vm = new Vue({
+        el: '#app',
+        data: {flag: false},
+        methods: {
+            fnclose(val) {
+                this.flag = val;
+            }
+        }
+        ,
+        components: {
+            msgBox: msgBox
+        }
+    })
+</script>
+</body>
+</html>
