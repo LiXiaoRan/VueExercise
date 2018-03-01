@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/01slot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/README.md" />
+    <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="keep-alive,">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/03keep-alive.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/03lifecycle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" afterPath="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day5/README.md" afterPath="$PROJECT_DIR$/Day5/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,27 +43,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="19">
-                <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-                <folding>
-                  <marker date="1519867782127" expanded="true" signature="80:87" ph="..." />
-                  <marker date="1519867782127" expanded="true" signature="80:446" ph="..." />
-                  <marker date="1519867782127" expanded="true" signature="131:380" ph="..." />
-                  <marker date="1519867782127" expanded="true" signature="390:437" ph="..." />
-                  <marker date="1519867782127" expanded="true" signature="468:734" ph="..." />
-                  <marker date="1519867782127" expanded="true" signature="705:722" ph="..." />
-                  <marker date="1519867782127" expanded="true" signature="705:734" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="01slot.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +53,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="001parent-to-childFunction.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="001parent-to-childFunction.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day5/001parent-to-childFunction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="608">
+              <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="734">
+                <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="59" />
+                <folding>
+                  <marker date="1519872242575" expanded="true" signature="80:87" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="80:446" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="131:380" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="390:437" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="468:734" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="705:722" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="705:734" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="796:1375" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="811:853" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="863:1375" ph="..." />
+                  <marker date="1519872242575" expanded="true" signature="901:1126" ph="{&quot;template&quot;: '&lt;div v-show=&quot;flag&quot;&gt;加载中。。。&lt;/div&gt;'...}" />
+                  <marker date="1519872242575" expanded="true" signature="918:967" ph="{...}" />
+                  <marker date="1519872242575" expanded="true" signature="1039:1120" ph="{...}" />
+                  <marker date="1519872242575" expanded="true" signature="1060:1110" ph="{...}" />
+                  <marker date="1519872242575" expanded="true" signature="1150:1365" ph="{&quot;el&quot;: '##app'...}" />
+                  <marker date="1519872242575" expanded="true" signature="1190:1245" ph="{...}" />
+                  <marker date="1519872242575" expanded="true" signature="1326:1357" ph="{&quot;loading&quot;: loading...}" />
+                  <marker date="1519872242575" expanded="true" signature="1494:1556" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03keep-alive.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day5/03keep-alive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03lifecycle.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/03lifecycle.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -116,8 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day2/01.html" />
-        <option value="$PROJECT_DIR$/Day2/01checkedBox.html" />
         <option value="$PROJECT_DIR$/Day2/03.html" />
         <option value="$PROJECT_DIR$/Day2/05callBackFunction.html" />
         <option value="$PROJECT_DIR$/Day2/05callBackFunction.js" />
@@ -163,10 +193,12 @@
         <option value="$PROJECT_DIR$/Day4/09sync_chiildToParent.html" />
         <option value="$PROJECT_DIR$/Day4/README.md" />
         <option value="$PROJECT_DIR$/Day4/10dialog.html" />
-        <option value="$PROJECT_DIR$/Day5/README.md" />
         <option value="$PROJECT_DIR$/Day5/01slot.html" />
         <option value="$PROJECT_DIR$/Day5/父调用子组件方法.html" />
+        <option value="$PROJECT_DIR$/Day5/README.md" />
+        <option value="$PROJECT_DIR$/Day5/03keep-alive.html" />
         <option value="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" />
+        <option value="$PROJECT_DIR$/Day5/03lifecycle.html" />
       </list>
     </option>
   </component>
@@ -312,7 +344,7 @@
       <workItem from="1517295059263" duration="12157000" />
       <workItem from="1519450756747" duration="33371000" />
       <workItem from="1519568560161" duration="60000" />
-      <workItem from="1519615778316" duration="32640000" />
+      <workItem from="1519615778316" duration="37527000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -566,11 +598,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519736941637</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="添加slot">
+      <created>1519868088918</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1519868088918</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165160000" />
+    <option name="totallyTimeSpent" value="170047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -631,7 +670,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="使用promise自己封装了一个ajax 更新了一下readme" />
     <MESSAGE value="用了vue和bootsrop实现了一个基础的购物车，目前还没有逻辑" />
     <MESSAGE value="购物车添加删除逻辑" />
     <MESSAGE value="增加全选逻辑" />
@@ -656,7 +694,8 @@
     <MESSAGE value="component相关的东西" />
     <MESSAGE value="子组件对父组件通信" />
     <MESSAGE value="自定义组件dialog" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义组件dialog" />
+    <MESSAGE value="添加slot" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加slot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -665,20 +704,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2/05promise2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day1/01ArrayLearn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day2/11animatimateQuery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1069,7 +1094,7 @@
         <state relative-caret-position="1401">
           <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1194,25 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-            <folding>
-              <marker date="1519867782127" expanded="true" signature="80:87" ph="..." />
-              <marker date="1519867782127" expanded="true" signature="80:446" ph="..." />
-              <marker date="1519867782127" expanded="true" signature="131:380" ph="..." />
-              <marker date="1519867782127" expanded="true" signature="390:437" ph="..." />
-              <marker date="1519867782127" expanded="true" signature="468:734" ph="..." />
-              <marker date="1519867782127" expanded="true" signature="705:722" ph="..." />
-              <marker date="1519867782127" expanded="true" signature="705:734" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1221,10 +1227,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="734">
+            <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="59" />
+            <folding>
+              <marker date="1519872242575" expanded="true" signature="80:87" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="80:446" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="131:380" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="390:437" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="468:734" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="705:722" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="705:734" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="796:1375" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="811:853" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="863:1375" ph="..." />
+              <marker date="1519872242575" expanded="true" signature="901:1126" ph="{&quot;template&quot;: '&lt;div v-show=&quot;flag&quot;&gt;加载中。。。&lt;/div&gt;'...}" />
+              <marker date="1519872242575" expanded="true" signature="918:967" ph="{...}" />
+              <marker date="1519872242575" expanded="true" signature="1039:1120" ph="{...}" />
+              <marker date="1519872242575" expanded="true" signature="1060:1110" ph="{...}" />
+              <marker date="1519872242575" expanded="true" signature="1150:1365" ph="{&quot;el&quot;: '##app'...}" />
+              <marker date="1519872242575" expanded="true" signature="1190:1245" ph="{...}" />
+              <marker date="1519872242575" expanded="true" signature="1326:1357" ph="{&quot;loading&quot;: loading...}" />
+              <marker date="1519872242575" expanded="true" signature="1494:1556" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/03lifecycle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day5/001parent-to-childFunction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="608">
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/03keep-alive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -25,3 +25,50 @@
 </template>
 ```
 
+## refs 获取子组件引
+获取之后可以在父组件中或者任意地方去调用子组件的方法
+```html
+<body>
+<div id="app">
+    <loading ref="load"></loading>
+</div>
+
+<script>
+    //父组件调用子组件方法
+
+    let loading = {
+        data() {
+            return {flag: true, a: 1}
+        },
+        template: '<div v-show="flag">加载中。。。</div>',
+        methods: {
+            hide() {
+                this.flag = false;
+            }
+        }
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        mounted() {
+            this.$refs.load.hide()//调用子组件方法
+        },
+        data: {flag: false},
+        methods: {}
+        ,
+        components: {
+            loading
+        }
+
+
+    })
+</script>
+```
+
+## <keep-alive></keep-alive>
+一般用作缓存，防止组件频繁切换的时候-，不停地创建和销毁,如果缓存了就不会再走created mounted 钩子函数
+```html
+    <keep-alive>
+        <component :is="radio"></component>
+    </keep-alive>
+```
