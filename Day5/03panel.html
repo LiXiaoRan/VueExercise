@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <panel type="warning">
+        <div slot="header">这是一篇vue 的使用</div>
+        <div slot="title">Vue</div>
+        <div slot="content">
+            内容区
+            <p>组件的属性传递</p>
+            <p>slot的用法</p>
+            <p>ref的用法</p>
+            <p>nextTick的用法</p>
+        </div>
+
+    </panel>
+    <panel type="primary"></panel>
+</div>
+
+<template id="panel">
+    <div>
+        <div class="card text-white  mb-3 " :class="color" style="max-width: 18rem;">
+            <div class="card-header">
+                <slot name="header">头</slot>
+            </div>
+            <div class="card-body bg-danger">
+                <h5 class="card-title">
+                    <slot name="title">标题</slot>
+                </h5>
+                <p class="card-text">
+                    <slot name="content">内容区啊</slot>
+                </p>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</template>
+
+<script>
+
+    let panel = {
+
+        template: '#panel',
+        props: {
+            type: {
+                type: [String],
+                default: 'default'
+            }
+        },
+        computed: {
+            color() {
+                return 'bg-' + this.type;
+            }
+        }
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            panel
+        }
+
+    });
+</script>
+</body>
+</html>

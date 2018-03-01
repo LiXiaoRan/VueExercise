@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="keep-alive,">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/03keep-alive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/03lifecycle.html" />
+    <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="slot结合">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/03panel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" afterPath="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day5/README.md" afterPath="$PROJECT_DIR$/Day5/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Day5/03keep-alive.html" afterPath="$PROJECT_DIR$/Day5/02keep-alive.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Day5/03lifecycle.html" afterPath="$PROJECT_DIR$/Day5/02lifecycle.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,16 +37,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01slot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="53" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -95,22 +84,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03keep-alive.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day5/03keep-alive.html">
+      <file leaf-file-name="02keep-alive.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/02keep-alive.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03lifecycle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/03lifecycle.html">
+      <file leaf-file-name="02lifecycle.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/02lifecycle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+            <state relative-caret-position="95">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01slot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03panel.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day5/03panel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day2/03.html" />
         <option value="$PROJECT_DIR$/Day2/05callBackFunction.html" />
         <option value="$PROJECT_DIR$/Day2/05callBackFunction.js" />
         <option value="$PROJECT_DIR$/Day2/file/05promise2.js" />
@@ -199,6 +209,7 @@
         <option value="$PROJECT_DIR$/Day5/03keep-alive.html" />
         <option value="$PROJECT_DIR$/Day5/001parent-to-childFunction.html" />
         <option value="$PROJECT_DIR$/Day5/03lifecycle.html" />
+        <option value="$PROJECT_DIR$/Day5/03panel.html" />
       </list>
     </option>
   </component>
@@ -344,7 +355,7 @@
       <workItem from="1517295059263" duration="12157000" />
       <workItem from="1519450756747" duration="33371000" />
       <workItem from="1519568560161" duration="60000" />
-      <workItem from="1519615778316" duration="37527000" />
+      <workItem from="1519615778316" duration="44606000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -605,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519868088918</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="keep-alive,refs">
+      <created>1519873889332</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1519873889332</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170047000" />
+    <option name="totallyTimeSpent" value="177126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -621,7 +639,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33949944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33949944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14330874" sideWeight="0.5038085" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -670,7 +688,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="用了vue和bootsrop实现了一个基础的购物车，目前还没有逻辑" />
     <MESSAGE value="购物车添加删除逻辑" />
     <MESSAGE value="增加全选逻辑" />
     <MESSAGE value="计算总价" />
@@ -695,7 +712,8 @@
     <MESSAGE value="子组件对父组件通信" />
     <MESSAGE value="自定义组件dialog" />
     <MESSAGE value="添加slot" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加slot" />
+    <MESSAGE value="keep-alive,refs" />
+    <option name="LAST_COMMIT_MESSAGE" value="keep-alive,refs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,13 +722,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2/11animatimateQuery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="63" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/axios/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2451">
@@ -1219,14 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="53" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day5/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1257,14 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/03lifecycle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day5/001parent-to-childFunction.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -1273,11 +1268,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/03keep-alive.html">
+    <entry file="file://$PROJECT_DIR$/Day5/02keep-alive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/02lifecycle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/03panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
