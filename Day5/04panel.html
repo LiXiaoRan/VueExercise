@@ -2,24 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>组件循环</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="../node_modules/vue/dist/vue.js"></script>
 
 </head>
 <body>
 <div id="app">
-    <panel type="warning" @say-title="parentSay">
-        <div slot="header">这是一篇vue 的使用</div>
-        <div slot="title">Vue</div>
+    <panel :type="article.type" @say-title="parentSay" v-for=" (article,index) in articles" :key="index">
+        <div slot="header">{{article.head}}</div>
+        <div slot="title"><span v-html="article.title"></span></div>
         <div slot="content">
-            内容区
-            <p>组件的属性传递</p>
-            <p>slot的用法</p>
-            <p>ref的用法</p>
-            <p>nextTick的用法</p>
+            {{article.content}}
         </div>
-        <div slot="author">名字</div>
+        <div v-if="article.auth" slot="author">{{article.auth}}</div>
     </panel>
     <panel type="primary"></panel>
 </div>
@@ -30,8 +26,8 @@
             <div class="card-header" ref="header">
                 <slot name="header">头</slot>
             </div>
-            <div class="card-body bg-danger"  >
-                <h5 class="card-title"  >
+            <div class="card-body bg-danger">
+                <h5 class="card-title">
                     <slot name="title">标题</slot>
                 </h5>
                 <p class="card-text">
@@ -62,9 +58,9 @@
                 return 'bg-' + this.type;
             }
         },
-        methods:{
-            say(){
-                this.$emit('say-title',this.$refs.header.innerText);
+        methods: {
+            say() {
+                this.$emit('say-title', this.$refs.header.innerText);
 //                console.log('ref is '+this.$refs);
             }
         }
@@ -72,6 +68,13 @@
 
     let vm = new Vue({
         el: '#app',
+        data: {
+            articles: [
+                {type: 'warning', title: '<h2>vue</h2>', content: '一些文章', auth: 'lr',head:'V'},
+                {type: 'primary', title: '<h2>rect</h2>', content: '一些文章', auth: 'lr',head:'R'},
+                {type: 'danger', title: '<h2>angular</h2>', content: '一些文章', auth: 'lr',head:'A'}
+            ]
+        },
         components: {
             panel
         },
