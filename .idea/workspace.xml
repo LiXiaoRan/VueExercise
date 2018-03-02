@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/04panel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/045event-bus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day5/03panel.html" afterPath="$PROJECT_DIR$/Day5/03panel.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,130 +20,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="10dialog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day4/10dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="09sync_chiildToParent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day4/09sync_chiildToParent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="001parent-to-childFunction.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/001parent-to-childFunction.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="08emit_chiildToParent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day4/08emit_chiildToParent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="734">
-                <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="59" />
-                <folding>
-                  <marker date="1519872242575" expanded="true" signature="80:87" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="80:446" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="131:380" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="390:437" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="468:734" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="705:722" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="705:734" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="796:1375" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="811:853" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="863:1375" ph="..." />
-                  <marker date="1519872242575" expanded="true" signature="901:1126" ph="{&quot;template&quot;: '&lt;div v-show=&quot;flag&quot;&gt;加载中。。。&lt;/div&gt;'...}" />
-                  <marker date="1519872242575" expanded="true" signature="918:967" ph="{...}" />
-                  <marker date="1519872242575" expanded="true" signature="1039:1120" ph="{...}" />
-                  <marker date="1519872242575" expanded="true" signature="1060:1110" ph="{...}" />
-                  <marker date="1519872242575" expanded="true" signature="1150:1365" ph="{&quot;el&quot;: '##app'...}" />
-                  <marker date="1519872242575" expanded="true" signature="1190:1245" ph="{...}" />
-                  <marker date="1519872242575" expanded="true" signature="1326:1357" ph="{&quot;loading&quot;: loading...}" />
-                  <marker date="1519872242575" expanded="true" signature="1494:1556" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02keep-alive.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/02keep-alive.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02lifecycle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/02lifecycle.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01slot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03panel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/03panel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="57" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04panel.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04panel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day5/04panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="045event-bus.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day5/045event-bus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day2/05callBackFunction.js" />
         <option value="$PROJECT_DIR$/Day2/file/05promise2.js" />
         <option value="$PROJECT_DIR$/Day1/README.md" />
         <option value="$PROJECT_DIR$/Day2/05promise-ajax.js" />
@@ -233,6 +126,7 @@
         <option value="$PROJECT_DIR$/Day5/03lifecycle.html" />
         <option value="$PROJECT_DIR$/Day5/03panel.html" />
         <option value="$PROJECT_DIR$/Day5/04panel.html" />
+        <option value="$PROJECT_DIR$/Day5/045event-bus.html" />
       </list>
     </option>
   </component>
@@ -378,7 +272,7 @@
       <workItem from="1517295059263" duration="12157000" />
       <workItem from="1519450756747" duration="33371000" />
       <workItem from="1519568560161" duration="60000" />
-      <workItem from="1519615778316" duration="48399000" />
+      <workItem from="1519615778316" duration="50750000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -653,11 +547,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519906396470</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="组件循环">
+      <created>1519980537477</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1519980537477</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180919000" />
+    <option name="totallyTimeSpent" value="183270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -669,7 +570,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33949944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33949944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14330874" sideWeight="0.5038085" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -718,7 +619,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加全选逻辑" />
     <MESSAGE value="计算总价" />
     <MESSAGE value="将修改和计算的逻辑放入了computed" />
     <MESSAGE value="vue动画" />
@@ -743,22 +643,16 @@
     <MESSAGE value="添加slot" />
     <MESSAGE value="keep-alive,refs" />
     <MESSAGE value="slot结合自定义自建，方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="slot结合自定义自建，方法" />
+    <MESSAGE value="组件循环" />
+    <option name="LAST_COMMIT_MESSAGE" value="组件循环" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2/file/carts.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day2/05promise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1328,12 +1222,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day5/04panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/045event-bus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

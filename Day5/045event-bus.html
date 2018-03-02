@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件总线</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <brother1></brother1>
+    <brother2></brother2>
+</div>
+<script>
+    let EventBus=new Vue;
+
+    let brother1 = {
+        template: '<div>{{color}} <button @click="change">变绿</button></div>',
+        data() {
+            return {
+                color: '绿色', old: '绿色'
+            }
+        },
+        created() {
+            EventBus.$on('changRed', (val) => {//组件加载的时候注册事件
+                this.color = val;
+            })
+        },
+        methods: {
+            change() {
+                EventBus.$emit('changGreen', this.old);
+            }
+        }
+
+
+    };
+    let brother2 = {
+        template: '<div>{{color}} <button @click="change">变红</button></div>',
+        data() {
+            return {
+                color: '红色', old: '红色'
+            }
+        },
+        created() {
+            EventBus.$on('changGreen', (val) => {//组件加载的时候注册事件
+                this.color = val;
+            })
+        },
+        methods: {
+            change() {
+                EventBus.$emit('changRed', this.old);
+            }
+        }
+
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            brother1, brother2
+        }
+    })
+</script>
+</body>
+</html>
