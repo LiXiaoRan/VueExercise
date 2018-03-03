@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <!--必须放在vue之后，因为vue-router基于vue-->
+    <script src="../node_modules/vue-router/dist/vue-router.js"></script>
+    <!--<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>-->
+    <style>
+        /*.router-link-active{color:red}*/
+        .active{color:red}
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+    <router-link to="/home" tag="button">Go to home</router-link>
+    <router-link to="/list" tag="button">Go to list</router-link>
+    <!--所有的router的组件都会渲染到这里面-->
+    <router-view></router-view>
+</div>
+<script>
+    let home = {template: '<div>首页</div>'};
+    let list = {template: '<div>列表页</div>'};
+    //路由映射表
+    let routes = [
+        {path: '/home', component: home},//配置的关系就是页面级组件
+        {path: '/list', component: list}//配置的关系就是页面级组件
+
+    ];
+    let router = new VueRouter({//引入vue-router自带的VueRouter类
+//        mode:'history',//h5模式,一般不用这种模式
+        routes: routes,
+        linkActiveClass:'active'//更改默认样式的类名
+    });
+    let vm = new Vue({
+        el: "#app",
+        router
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编程式导航</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <!--必须放在vue之后，因为vue-router基于vue-->
+    <script src="../node_modules/vue-router/dist/vue-router.js"></script>
+    <!--<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>-->
+    <style>
+        .active {
+            color: red
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--编程式导航-->
+
+    <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+    <router-link :to="{path:'/home'}" tag="button">Go to home</router-link>
+    <router-link :to="{path:'/list'}" tag="button">Go to list</router-link>
+    <!--所有的router的组件都会渲染到这里面-->
+    <router-view></router-view>
+</div>
+<script>
+    let home = {
+        template: '<div>首页<button @click="todoList">去列表</button></div>', methods: {
+            todoList() {
+                this.$router.push('/list')//强制跳转一个路径
+                this.$router.replace('/list')//路由替换
+            }
+        }
+    };
+    let list = {
+        template: '<div>列表页<button @click="backHome">返回首页</button></div>', methods: {
+            backHome() {
+                this.$router.go(-1)//返回上一级
+            }
+        }
+    };
+
+    //路由映射表
+    let routes = [
+        {
+            path: '/', component: home  //设置默认布局
+        },
+
+        {
+            path: '/home', component: home
+
+        },//配置的关系就是页面级组件
+        {
+            path: '/list', component: list
+        },//配置的关系就是页面级组件
+        {
+            path: '*', redirect: '/home'//如果填错链接的话，就会跳转到home页面。平时用来切换404页面
+        }
+    ];
+
+    let router = new VueRouter({//引入vue-router自带的VueRouter类
+        routes: routes,
+    });
+
+    let vm = new Vue({
+        el: "#app",
+        router//每个组件都会拥有一个名字叫$router(存的都是方法)的属性 还有一个名字叫$route（存的都是属性）
+    })
+</script>
+</body>
+</html>

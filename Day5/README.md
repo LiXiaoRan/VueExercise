@@ -72,3 +72,92 @@
         <component :is="radio"></component>
     </keep-alive>
 ```
+
+##EventBus 事件总线
+用于多个组件之间的相互通信。用法：
+```javascript
+    let EventBus=new Vue;
+
+    let brother1 = {
+        template: '<div>{{color}} <button @click="change">变绿</button></div>',
+        data() {
+            return {
+                color: '绿色', old: '绿色'
+            }
+        },
+        created() {
+            EventBus.$on('changRed', (val) => {//组件加载的时候注册事件
+                this.color = val;
+            })
+        },
+        methods: {
+            change() {
+                EventBus.$emit('changGreen', this.old);
+            }
+        }
+
+
+    };
+    let brother2 = {
+        template: '<div>{{color}} <button @click="change">变红</button></div>',
+        data() {
+            return {
+                color: '红色', old: '红色'
+            }
+        },
+        created() {
+            EventBus.$on('changGreen', (val) => {//组件加载的时候注册事件
+                this.color = val;
+            })
+        },
+        methods: {
+            change() {
+                EventBus.$emit('changRed', this.old);
+            }
+        }
+
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            brother1, brother2
+        }
+    })
+```
+
+## 路由 
+- 访问不同的路径，就可以返回不同的结果
+## 多页面（spa 单页应用）
+- single page application
+<br>用法
+```html
+<body>
+<div id="app">
+    <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+    <router-link to="/home">Go to home</router-link>
+    <router-link to="/list">Go to list</router-link>
+    <!--所有的router的组件都会渲染到这里面-->
+    <router-view></router-view>
+</div>
+<script>
+    let home = {template: '<div>首页</div>'};
+    let list = {template: '<div>列表页</div>'};
+    //路由映射表
+    let routes = [
+        {path: '/home', component: home},//配置的关系就是页面级组件
+        {path: '/list', component: list}//配置的关系就是页面级组件
+
+    ];
+    let router = new VueRouter({//引入vue-router自带的VueRouter类
+        routes:routes
+    });
+    let vm = new Vue({
+        el: "#app",
+        router        router//每个组件都会拥有一个名字叫$router(存的都是方法)的属性 还有一个名字叫$route（存的都是属性）
+
+    })
+</script>
+</body>
+```
+
