@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由参数</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <!--必须放在vue之后，因为vue-router基于vue-->
+    <script src="../node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <router-link to="/article/1/a">商品1</router-link>
+    <router-link to="/article/2">商品2</router-link>
+    <router-link to="/article/3">商品3</router-link>
+    <router-view></router-view>
+</div>
+
+<script>
+    let article = {
+        template: '<div>第 {{$route.params.c}} 篇文章</div>'
+    };
+
+    let routes = [ //路径参数 表示值必须要有但是值是随机的
+        {
+            //路径参数:c代表是随机的
+            path: '/article/:c', component: article
+        }
+    ];
+
+    let router = new VueRouter({
+        routes
+    });
+
+    let vm = new Vue({
+        el: '#app',
+        router
+
+    })
+
+</script>
+</body>
+</html>

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c377b102-102c-4036-83a1-4d0519c94e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/06router.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/07routerPrograming.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/08mulLevel-router.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/09router-param.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day5/09router-param2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day5/README.md" afterPath="$PROJECT_DIR$/Day5/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Day5/045event-bus.html" afterPath="$PROJECT_DIR$/Day5/05event-bus.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,8 +48,8 @@
         <entry file="file://$PROJECT_DIR$/Day5/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="734">
-                <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <first_editor relative-caret-position="739">
+                <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
                 <folding>
                   <marker date="1520066220304" expanded="true" signature="80:87" ph="..." />
                   <marker date="1520066220304" expanded="true" signature="80:446" ph="..." />
@@ -121,21 +118,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="08mulLevel-router.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day5/08mulLevel-router.html">
+      <file leaf-file-name="01slot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="475">
+              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01slot.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
+      <file leaf-file-name="08mulLevel-router.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/08mulLevel-router.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="361">
+              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="09router-param.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day5/09router-param.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="09router-param2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day5/09router-param2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -174,8 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day2/file/carts.json" />
-        <option value="$PROJECT_DIR$/Day2/07computed.html" />
         <option value="$PROJECT_DIR$/Day2/07promiseAxios.html" />
         <option value="$PROJECT_DIR$/Day2/10computed.html" />
         <option value="$PROJECT_DIR$/Day2/11transition.html" />
@@ -225,6 +240,8 @@
         <option value="$PROJECT_DIR$/Day5/README.md" />
         <option value="$PROJECT_DIR$/Day5/06routerPrograming.html" />
         <option value="$PROJECT_DIR$/Day5/08mulLevel-router.html" />
+        <option value="$PROJECT_DIR$/Day5/09router-param.html" />
+        <option value="$PROJECT_DIR$/Day5/09router-param2.html" />
       </list>
     </option>
   </component>
@@ -370,7 +387,7 @@
       <workItem from="1517295059263" duration="12157000" />
       <workItem from="1519450756747" duration="33371000" />
       <workItem from="1519568560161" duration="60000" />
-      <workItem from="1519615778316" duration="63326000" />
+      <workItem from="1519615778316" duration="66224000" />
     </task>
     <task id="LOCAL-00001" summary="第8、9集的内容">
       <created>1516712152065</created>
@@ -659,11 +676,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519982889773</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="多级路由">
+      <created>1520079103212</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1520079103212</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195846000" />
+    <option name="totallyTimeSpent" value="198744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -724,7 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将修改和计算的逻辑放入了computed" />
     <MESSAGE value="vue动画" />
     <MESSAGE value="animated.css动画" />
     <MESSAGE value="写了一些笔记并且写了computed的一个全选的逻辑" />
@@ -749,7 +772,8 @@
     <MESSAGE value="slot结合自定义自建，方法" />
     <MESSAGE value="组件循环" />
     <MESSAGE value="eventBus" />
-    <option name="LAST_COMMIT_MESSAGE" value="eventBus" />
+    <MESSAGE value="多级路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="多级路由" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -758,20 +782,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day3/02inputVerify.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/04login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day1/08command.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1260,7 +1270,7 @@
         <state relative-caret-position="439">
           <caret line="57" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -1293,11 +1303,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/07routerPrograming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="46" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/08mulLevel-router.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day5/09router-param.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day5/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="734">
-            <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <first_editor relative-caret-position="739">
+            <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
             <folding>
               <marker date="1520066220304" expanded="true" signature="80:87" ph="..." />
               <marker date="1520066220304" expanded="true" signature="80:446" ph="..." />
@@ -1345,26 +1387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/07routerPrograming.html">
+    <entry file="file://$PROJECT_DIR$/Day5/09router-param2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="46" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/08mulLevel-router.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/01slot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="494">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding />
         </state>
       </provider>
