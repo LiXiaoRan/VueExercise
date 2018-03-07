@@ -49,3 +49,9 @@ npm install babel-preset-es2015 --save-dev
 
 ```
 
+## babel-preset-stage-0
+```
+npm install babel-preset-stage-0 --save-dev
+stage-0包含了stage-1，-2，-3。其中-4是es6
+
+```
