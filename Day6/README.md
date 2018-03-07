@@ -25,3 +25,8 @@ console.log('导入的值' + a.str1, a.str2);
 a.a();
 
 ```
+
+## webpack
+> 安装最好不要全局安装。否则可能导致webpack的版本差异
+- 在packge.json中配置一个脚本，这个脚本用的命令是webpack会去当前的node_modules下找bin对应的webpack名字让其执行，执行的就是bin/webpack.js，webpack.js需要当前目录下有个名字叫做webpack.config.js
+的文件，我们通过npm run build执行的目录是当前文件夹的目录，所以回去当前目录下查找
