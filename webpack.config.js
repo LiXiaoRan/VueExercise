@@ -6,6 +6,13 @@ module.exports = {
         filename: 'bundle.js',//打包后的名字
         path: path.resolve('./Day6/dist')//必须是一个绝对路径 path.resolve会将一个相对路径编程绝对路径
 
-    }
+    },
 
+    //模块解析规则
+    // js 匹配所有的js，除了node_modules
+    module: {
+        rules: [
+            {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/}
+        ]
+    }
 };
