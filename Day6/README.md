@@ -55,3 +55,9 @@ npm install babel-preset-stage-0 --save-dev
 stage-0包含了stage-1，-2，-3。其中-4是es6
 
 ```
+
+## 解析样式
+- css-loader将css解析成模块，将解析的内容插入到style标签内（style-loader）
+```
+npm install css-loader --save-dev
+```

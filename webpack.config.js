@@ -12,7 +12,9 @@ module.exports = {
     // js 匹配所有的js，除了node_modules
     module: {
         rules: [
-            {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/}
+            {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/},
+            //写的时候use从右往左写，先转换成css再加入style
+            {test:/\.css$/,use:['style-loader','css-loader']}
         ]
     }
 };
